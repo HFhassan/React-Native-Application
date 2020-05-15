@@ -36,20 +36,20 @@ const HomeNavigator = createStackNavigator({
 },
 {
 
-    navigationOptions:{
+    navigationOptions: ({ navigation }) => ({
+        headerLeft: <Icon name="menu" size={24} 
+        color= 'white'
+        onPress={ () => navigation.toggleDrawer() } />
+    ,
         headerStyle: {
             backgroundColor: '#512DA8'
         },
         headerTintColor: '#fff',
         headerTitleStyle:{
             color: '#fff'
-            // headerLeft: <Icon name='menu' size={24}
-            //     color='white'
-            //     onPress= {( )=> navigation.toggleDrawer()}
-            // />
         }
     
-}
+    })
   }  );
 
 const AboutusNavigator = createStackNavigator({
@@ -57,16 +57,16 @@ const AboutusNavigator = createStackNavigator({
 },
 {
     navigationOptions: ({ navigation }) => ({
+        headerLeft: <Icon name="menu" size={24} 
+        color= 'white'
+        onPress={ () => navigation.toggleDrawer() } />
+    ,
         headerStyle:{
             backgroundColor: '#512DA8'
         },
         headerTintColor: '#fff',
         headerTitleStyle:{
             color: '#fff'
-        //     headerLeft: <Icon name='menu' size={24}
-        //         color='white'
-        //         onPress= {( )=> navigation.toggleDrawer()}
-        // />
         }
     })
 }
@@ -77,16 +77,16 @@ const ContactNavigator = createStackNavigator({
 },
 {
     navigationOptions: ({ navigation }) => ({
+        headerLeft: <Icon name="menu" size={24} 
+        color= 'white'
+        onPress={ () => navigation.toggleDrawer() } />
+    ,
         headerStyle:{
             backgroundColor: '#512DA8'
         },
         headerTintColor: '#fff',
         headerTitleStyle:{
             color: '#fff'
-        //     headerLeft: <Icon name='address-card' size={24}
-        //         color='white'
-        //         onPress= {( )=> navigation.toggleDrawer()}
-        // />
         }
     })
 });
